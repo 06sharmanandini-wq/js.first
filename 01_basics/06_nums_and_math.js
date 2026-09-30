@@ -34,4 +34,4 @@ console.log(Math.floor(Math.random()*10) + 1);   // to avoid getting the output 
 
 const min = 5
 const max = 16
-console.log(Math.floor(Math.random() * (max - min + 1) + min));
+console.log(Math.floor(Math.random() * (max - min + 1) + min)); 
