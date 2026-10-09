@@ -58,5 +58,6 @@ let slice = myArc.slice(1,4);
 
 
 let splice = myArc.splice(-1,6);
-console.log(splice);
-console.log(myArc);
+// console.log(splice);
+// console.log(myArc);
+
