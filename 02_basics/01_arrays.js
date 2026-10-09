@@ -39,13 +39,24 @@ const myArr2 = new Array(1, 2, 3, 4, 5)
 
 // slice, splice
 
-console.log("A", myArr);
+// console.log("A", myArr);
 
-const myn1 = myArr.slice(1, 3)
+// const myn1 = myArr.slice(1, 3)
 
-console.log(myn1);
-console.log("B", myArr);
+// console.log(myn1);
+// console.log("B", myArr);
 
-const myn2 = myArr.splice(1, 3)
-console.log("C", myArr);
-console.log(myn2); 
+// const myn2 = myArr.splice(1, 3)
+// console.log("C", myArr);
+// console.log(myn2); 
+
+let myArc = ["apple", "pineapple", "mango", "kiwi", "oranges", "rasberry"]
+
+let slice = myArc.slice(1,4);
+// console.log(slice);
+// console.log(myArc);
+
+
+let splice = myArc.splice(-1,6);
+console.log(splice);
+console.log(myArc);
