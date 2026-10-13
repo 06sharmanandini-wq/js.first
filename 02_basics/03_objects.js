@@ -17,23 +17,37 @@ const JsUser = {
     lastLoginDays: ["Wednessday", "Saturday"]
 }
 
-console.log(JsUser.isLoggedIn);
-console.log(JsUser["email"]);
-console.log(JsUser["full-name"]);
+//console.log(JsUser.isLoggedIn);
+//console.log(JsUser["email"]);
+//console.log(JsUser["full-name"]);
 // console.log(JsUser.mySym);
 // console.log(typeof JsUser.m);
 
-console.log(JsUser[mySym]);
-console.log(typeof JsUser[mySym]);
+// console.log(JsUser[mySym]);
+//console.log(typeof JsUser[mySym]);
 
 JsUser.email = "sunamjyotishi@gmail.com"     // can change the value inside object JsUser 
-console.log(JsUser.email);
-Object.freeze(JsUser);
+//console.log(JsUser.email);
+// Object.freeze(JsUser);
 
-JsUser.name = "Json"
-console.log(JsUser.name);
+// JsUser.name = "Json"
+//console.log(JsUser.name);
 
 JsUser.age = 22
-console.log(JsUser.age);
+// console.log(JsUser.age);
 
-console.log(JsUser);
+// console.log(JsUser);
+
+JsUser.greeting = function() {
+    console.log("Hello JS user")
+}
+JsUser.greetingTwo = function() {
+    console.log(`Hello JS user, ${this.name}`)        // to refer something inside the object should use (this.name)
+}
+
+
+console.log(JsUser.greeting());
+console.log(JsUser.greeting);
+
+console.log(JsUser.greetingTwo);
+console.log(JsUser.greetingTwo());
