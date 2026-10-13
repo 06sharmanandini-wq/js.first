@@ -3,9 +3,13 @@
 // Object literals to declare object 
 // Object.create
 
+const mySym = Symbol("key1")
+
+
 const JsUser = {
     name: "Sunam",
-    "full"
+    "full-name": "Sunam Jyotishi",
+    [mySym]: "mykey1",                             // for use it as symbol we need to put it in [] brackets
     age: 23,
     location: "Shilong",
     email: "sunam@google.com",
@@ -15,3 +19,21 @@ const JsUser = {
 
 console.log(JsUser.isLoggedIn);
 console.log(JsUser["email"]);
+console.log(JsUser["full-name"]);
+// console.log(JsUser.mySym);
+// console.log(typeof JsUser.m);
+
+console.log(JsUser[mySym]);
+console.log(typeof JsUser[mySym]);
+
+JsUser.email = "sunamjyotishi@gmail.com"     // can change the value inside object JsUser 
+console.log(JsUser.email);
+Object.freeze(JsUser);
+
+JsUser.name = "Json"
+console.log(JsUser.name);
+
+JsUser.age = 22
+console.log(JsUser.age);
+
+console.log(JsUser);
