@@ -3,6 +3,7 @@
 // Object literals to declare object 
 // Object.create
 
+// Object Literals
 const mySym = Symbol("key1")
 
 
@@ -51,3 +52,4 @@ console.log(JsUser.greeting);
 
 console.log(JsUser.greetingTwo);
 console.log(JsUser.greetingTwo());
+
