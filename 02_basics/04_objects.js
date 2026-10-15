@@ -90,7 +90,9 @@ const course = {
 const {courseInstructor: instructor} = course
 console.log(instructor);
 
-const navbar = () => {
+// const navbar = ({company}) => {                  // this is react not node
 
-}
-navbar()
+// }
+// navbar(company)
+
+ 
