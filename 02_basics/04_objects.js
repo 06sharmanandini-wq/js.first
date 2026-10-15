@@ -64,11 +64,33 @@ const Users = [
 ]
 
 Users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('name'));
-console.log(tinderUser.hasOwnProperty('isLogged'));        // to know if this property exist in object or not
+// console.log(tinderUser.hasOwnProperty('name'));
+// console.log(tinderUser.hasOwnProperty('isLogged'));        // to know if this property exist in object or not
+
+
+/***********************************************De-structure of Object******************************** */
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh sir"
+}
+
+// course.courseInstructor[0];
+
+// const {price} = course
+// console.log(courseInstructor);
+// console.log(price);
+
+const {courseInstructor: instructor} = course
+console.log(instructor);
+
+const navbar = () => {
+
+}
+navbar()
