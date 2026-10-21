@@ -88,11 +88,24 @@ const course = {
 // console.log(price);
 
 const {courseInstructor: instructor} = course
-console.log(instructor);
+//console.log(instructor);
 
 // const navbar = ({company}) => {                  // this is react not node
 
 // }
-// navbar(company)
+// navbar(company = "Krishn")
 
- 
+// *********************************************** JSON ******************************************\\
+// {                                                 // JSON is string in keys and its value both are string and it is used to transfer data from one server to another server
+//     "name": "Hitesh sir",
+//     "coursename": "js in hindi",
+//     "price": "Free"
+// }
+
+[                                            // API in array form
+    {},
+    {},
+    {}
+]
+
+
