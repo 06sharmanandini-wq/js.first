@@ -11,3 +11,17 @@ console.log(a);
 // console.log(c);
 
 // global scope is different in inspect console and codespace 
+
+// NESTED SCOPE
+
+function one() {
+   const username = "yunjesh"
+
+   function two() {
+      const website = "youtube"
+      console.log(username);
+   }
+   // console.log(website);
+   two()
+}
+one()
