@@ -15,3 +15,7 @@
 
 //()()                             // sometimes code is polluted bcoz of global space variables in order to protect it IIFE is used  
 //chai()
+
+
+////////// Execuction context //////////////////////////////////////////
+/**************************Call Stack ****************************************/
