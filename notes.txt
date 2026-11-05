@@ -1,0 +1,21 @@
+JavaScript Execution Context
+{} - Global EC
+// JavaScript is single thread everything works in process
+  There are execution context------->
+- Global Execution Context
+- Function/Functional Execution context
+-Eval Execution context (property of global object)
+{js function} - Memory creation phase (creation phase) --> here only variable declare here but not execute here (ex- mathematical function like +,-) 
+- Execution phase - Execution process here
+example code -----
+let val1= 10
+let val2= 5
+function addNum(num1, num2) {
+  let total = num1 + num2
+  return total
+}
+let result1= addNum(val1, val2)
+let result2= addNum(10, 2)
+
+1) Global execution - this (always first in this)
+2) Memory phase = val1 --> undefined, val2 --> undefined, addNum --> defination
