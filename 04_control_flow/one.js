@@ -37,12 +37,24 @@ const balance= 1000
 // if(balance > 500) console.log("test"),       // splicit scope
 // console.log("test2");                        // immature way, not an ideal way to write code
 
-if(balance < 500) {
-    console.log("less than 500");
-} else if(balance < 750) {
-    console.log("less than 750");
-} else if(balance < 900) {
-    console.log("less than 750");
-} else {
-    console.log("less than 1200")
+// if(balance < 500) {
+//     console.log("less than 500");
+// } else if(balance < 750) {
+//     console.log("less than 750");
+// } else if(balance < 900) {
+//     console.log("less than 750");
+// } else {
+//     console.log("less than 1200")
+// }
+
+const userLoggedIn= true
+const debitCard= true
+const userLoggedInFromGoogle= true
+const userLoggedInFromEmail = true
+
+if(userLoggedIn && debitCard && 2==3) {                              // && = OR
+    console.log("Allow to buy course");
+}
+if(userLoggedInFromGoogle || userLoggedInFromEmail) {                // || = OR
+    console.log("user logged in");
 }
