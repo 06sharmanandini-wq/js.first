@@ -52,7 +52,7 @@ const debitCard= true
 const userLoggedInFromGoogle= true
 const userLoggedInFromEmail = true
 
-if(userLoggedIn && debitCard && 2==3) {                              // && = OR
+if(userLoggedIn && debitCard && 2==3) {                              // && = AND
     console.log("Allow to buy course");
 }
 if(userLoggedInFromGoogle || userLoggedInFromEmail) {                // || = OR
